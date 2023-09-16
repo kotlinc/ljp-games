@@ -10,151 +10,112 @@
     <meta name="author" content="Lucas Plumb">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-      .card {
-        border-color: transparent;
-        border-radius: 5%;
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+      h1, h2, h3, h4, h5, h6, b, p, label, a, button {
+        font-family: "Poppins", system-ui, arial, sans-serif;
+        text-decoration: none;
+        color: rgb(190, 190, 190);
+        transition-duration: 0.5s;
+      }
+
+      .warning {
+        color: rgb(255, 150, 150);
+      }
+
+      .feature {
+        color: rgb(150, 255, 150);
       }
 
       body {
-        background-color: #fff;
+        background-color: rgb(15, 15, 15);
       }
 
-      h1, h2, h3, b, p, a, button, warning, feature {
-        font-family: "Poppins";
-        color: rgb(17, 17, 17);
-        text-decoration: none;
+      .card {
+        background-color: rgb(20, 20, 20);
+        width: 90vw;
+        height: 75vh;
+        padding-left: 7.5px;
+        text-align: left;
+        border-radius: 5vh;
+        border-style: solid;
+        border-color: rgb(75, 75, 75);
+        border-width: thin;
+        transition-duration: 0.5s;
       }
 
-      button {
-        background-color: transparent;
-        border-color: rgb(17, 17, 17)
+      .play {
+        background-color: rgb(20, 20, 20);
+        text-align: center;
+        border-radius: 2.5vh;
+        border-style: solid;
+        border-color: rgb(75, 75, 75);
+        border-width: thin;
+        transition-duration: 0.5s;
       }
 
-      h1 {
-        font-size: 45px;
+      .play:hover {
+        border-color: rgb(150, 255, 150);
+        color: rgb(150, 255, 150);
+        transition-duration: 0.5s;
       }
 
-      h2 {
-        font-size: 32px;
-        font-weight: 600;
+      .card:hover {
+        border-color: rgb(150, 255, 150);
+        transition-duration: 0.5s;
       }
 
-      b, button {
-        font-weight: 500;
-      }
-
-      p {
-        font-weight: 300;
-      }
-
-      warning {
-        font-weight: 500;
-        color: #A41D1D !important;
-      }
-
-      feature {
-        font-weight: 500;
-        color: #1C3E24 !important;
-      }
-
-      li {
-        list-style: none;
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-items: baseline;
+        gap: 2.5vw;
       }
     </style>
   </head>
   <body>
-    <ul>
-      <li>
-        <div class='card'>
-          <h2>
-            Hotdog Clicker
-          </h2>
-          <b>
-          A Cookie Clicker ripoff with a hotdog.
-          </b>
-          <br>
-          <p>
-          Fully maintained by Lucas Plumb.
-          </p>
-          <warning>DOES NOT SAVE</warning>
-          <br><br>
-          <button>
-            <a href="https://kotlinc.github.io/hotdog-clicker" target="_blank">
-              PLAY
-            </a>
-          </button>
-        </div>
-      </li>
-      <li>
-        <div class='card'>
-          <h2>
-            Lolly Clicker
-          </h2>
-          <b>
-          A new clicker game to get good in too.
-          </b>
-          <br>
-          <p>
-          Fully maintained by Lucas Plumb.
-          </p>
-          <warning>DOES NOT SAVE</warning>
-          <br><br>
-          <button>
-            <a href="https://kotlinc.github.io/lolly-clicker" target="_blank">
-              PLAY
-            </a>
-          </button>
-        </div>
-      </li>
-      <li>
-        <div class='card'>
-          <h2>
-            Electricity Clicker
-          </h2>
-          <b>
-          A ripoff of a game my friend showed me.
-          </b>
-          <br>
-          <p>
-          Fully maintained by Lucas Plumb.
-          </p>
-          <warning>DOES NOT SAVE</warning>
-          <br><br>
-          <warning>WORK IN PROGRESS</warning>
-          <br><br>
-          <button>
-            <a href="https://kotlinc.github.io/energy-clicker" target="_blank">
-              PLAY
-            </a>
-          </button>
-        </div>
-      </li>
-      <li>
-        <div class='card'>
-          <h2>
-            Banana Clicker
-          </h2>
-          <b>
-          We need every food to be a clicker game.
-          </b>
-          <br>
-          <p>
-          Fully maintained by Lucas Plumb.
-          </p>
-          <feature>SAVES</feature>
-          <br><br>
-          <warning>WORK IN PROGRESS</warning>
-          <br><br>
-          <warning>MAC AND LINUX ONLY</warning>
-          <br><br>
-          <button>
-            <a href="https://github.com/kotlinc/banana-clicker" target="_blank">
-              PLAY
-            </a>
-          </button>
-        </div>
-      </li>
-    </ul>
+    <main>
+  <div class="card">
+    <h1>Hotdog Clicker</h1>
+    <b>WEB GAME | SOUNDS</b>
+    <br>
+    <p>
+      A cookie clicker clone.
+    </p>
+    <b class="warning">DOES NOT SAVE</b>
+    <br><br>
+    <button class="play">
+      <a href="https://kotlinc.github.io/hotdog-clicker">Play</a>
+    </button>
+  </div>
+  <div class="card">
+    <h1>Lolly Clicker</h1>
+    <b>WEB GAME</b>
+    <br>
+    <p>
+      Hotdog clicker sequel.
+    </p>
+    <b class="warning">DOES NOT SAVE</b>
+    <br><br>
+    <button class="play">
+      <a href="https://kotlinc.github.io/lolly-clicker">Play</a>
+    </button>
+  </div>
+  <div class="card">
+    <h1>Electricity Clicker</h1>
+    <b>WEB GAME | WIP</b>
+    <br>
+    <p>
+      Lolly clicker sequel.
+    </p>
+    <b class="warning">DOES NOT SAVE</b>
+    <br><br>
+    <button class="play">
+      <a href="https://kotlinc.github.io/energy-clicker">Play</a>
+    </button>
+  </div>
+</main>
   </body>
 </html>
