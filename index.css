@@ -1,0 +1,61 @@
+h1, h2, h3, h4, h5, h6, b, p, label, a, button {
+  font-family: "Poppins", system-ui, arial, sans-serif;
+  text-decoration: none;
+  color: rgb(190, 190, 190);
+  transition-duration: 0.5s;
+}
+
+.warning {
+  color: rgb(255, 150, 150);
+}
+
+.feature {
+  color: rgb(150, 255, 150);
+}
+
+body {
+  background-color: rgb(15, 15, 15);
+}
+
+.card {
+  background-color: rgb(20, 20, 20);
+  width: 90vw;
+  height: 75vh;
+  padding-left: 7.5px;
+  text-align: left;
+  border-radius: 5vh;
+  border-style: solid;
+  border-color: rgb(75, 75, 75);
+  border-width: thin;
+  transition-duration: 0.5s;
+}
+
+.play {
+  background-color: rgb(20, 20, 20);
+  text-align: center;
+  border-radius: 2.5vh;
+  border-style: solid;
+  border-color: rgb(75, 75, 75);
+  border-width: thin;
+  transition-duration: 0.5s;
+}
+
+.play:hover {
+  border-color: rgb(150, 255, 150);
+  color: rgb(150, 255, 150);
+  transition-duration: 0.5s;
+}
+
+.card:hover {
+  border-color: rgb(150, 255, 150);
+  transition-duration: 0.5s;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-items: baseline;
+  gap: 2.5vw;
+}
